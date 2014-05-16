@@ -94,7 +94,11 @@ def make_tokenizer(specs):
         while i < length:
             for spec in specs:
                 m = spec.re.match(s, i)
+<<<<<<< HEAD
                 if m is not None:                    
+=======
+                if m is not None:
+>>>>>>> c224907dfc9de6d5225dc91479352cafe512cba5
                     value = m.group()
                     nls = value.count('\n')
                     n_line = line + nls
